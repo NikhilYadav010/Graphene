@@ -97,15 +97,15 @@ CLIENT_URL=http://localhost:5173
 NODE_ENV=development
 ```
 
-## Deployment (Railway)
+## Deployment (Render)
 
 ### Backend
-Set these environment variables in Railway:
+Set these environment variables in Render:
 - `MONGODB_URI` — MongoDB Atlas connection string
 - `JWT_SECRET` — Secret key for JWT signing
 - `CLIENT_URL` — Your deployed frontend URL
 
-### Frontend
+### Frontend(Vercel)
 The `VITE_API_URL` is set in `frontend/.env.production` and gets baked into the build automatically.
 
 ## Docker (local)
