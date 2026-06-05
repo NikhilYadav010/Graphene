@@ -14,7 +14,9 @@ app.use(cors({
       'http://localhost:8080',
       'http://localhost',
     ].filter(Boolean);
-    if (!origin || allowedOrigins.includes(origin)) {
+    
+    // Allow the specific exact match OR any Vercel preview URL
+    if (!origin || allowedOrigins.includes(origin) || origin.endsWith('.vercel.app')) {
       callback(null, true);
     } else {
       callback(new Error('Not allowed by CORS'));
