@@ -9,7 +9,7 @@ A full-stack project management app built with React, Node.js/Express, and Mongo
 | Frontend | React 18, React Router, Axios, Vite |
 | Backend | Node.js, Express, JWT Auth |
 | Database | MongoDB (Mongoose) |
-| Deployment | Railway |
+| Deployment | Render | Vercel |
 
 ## Features
 
